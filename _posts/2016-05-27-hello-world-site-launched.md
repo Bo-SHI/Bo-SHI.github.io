@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "bo shi, Hello World"
+title: "hello world"
 date: 2016-05-27
 ---
 
