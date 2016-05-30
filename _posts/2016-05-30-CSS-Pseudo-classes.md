@@ -8,7 +8,7 @@ date: 2016-05-30
 
 > CSS伪类用于向某些选择器添加特殊的效果
 
->语法：
+> 语法：
   - selector:pseudo-class {property:value;}
   - selector.class:pseudo-class {property:value;}
 
