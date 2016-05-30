@@ -30,7 +30,7 @@ date: 2016-05-30
 
 > 必须声明<!DOCTYPE> :first-child 才可以在IE中生效
 
-列子1 匹配第一个&lt;p&gt;元素:
+例子1 匹配第一个&lt;p&gt;元素:
 
     <head>
       <style type="text/css">
@@ -42,7 +42,7 @@ date: 2016-05-30
       <p>This is not</p>
     </body>
 
-列子2 匹配所有&lt;p&gt;元素中的第一个&lt;li&gt;元素
+例子2 匹配所有&lt;p&gt;元素中的第一个&lt;li&gt;元素
 
     <head>
       <style type="text/css">
@@ -54,7 +54,7 @@ date: 2016-05-30
       <p><i>This is the first-child</i>.<i>This is not</i></p>
     </body>
 
-列子3 匹配第一个&lt;p&gt;元素中的所有i元素
+例子3 匹配第一个&lt;p&gt;元素中的所有i元素
 
     <head>
       <style type="text/css">
