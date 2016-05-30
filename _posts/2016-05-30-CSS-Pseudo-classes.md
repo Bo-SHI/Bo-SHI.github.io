@@ -9,8 +9,8 @@ date: 2016-05-30
 > CSS伪类用于向某些选择器添加特殊的效果
 
 > 语法：
-  - selector:pseudo-class {property:value;}
-  - selector.class:pseudo-class {property:value;}
+- selector:pseudo-class {property:value;}
+- selector.class:pseudo-class {property:value;}
 
 ### 锚伪类
 
@@ -74,4 +74,5 @@ date: 2016-05-30
 ### CSS :focus伪类
 
 > :focus 向拥有箭牌输入焦点的元素设置样式
+
 > :focus 无法再IE中使用
