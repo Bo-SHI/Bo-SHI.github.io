@@ -73,4 +73,4 @@ date: 2016-05-27
 
 > 相邻兄弟选择器(Adjacent sibling selector)可选择紧接在另一元素后面的元素，且二者有相同的父元素
 
--相邻兄弟选择器使用了+号作为相邻兄弟结合符(adjacent sibling combinator)
+- 相邻兄弟选择器使用了+号作为相邻兄弟结合符(adjacent sibling combinator)
