@@ -28,4 +28,31 @@ date: 2016-05-30
 
 #### :first-letter 元素
 
->
+> 用于向文本的首字母设置样式
+
+> 只能用于块级元素
+
+可以应用的属性：
+
+  * font
+  * color
+  * background
+  * margin
+  * padding
+  * border
+  * text-decoration
+  * text-transform
+  * line-height
+  * float
+  * clear
+  * vertical-align(仅当float为none)
+
+> 伪元素可以和CSS类配合使用
+
+#### :before 元素
+
+> 可以在元素的前面插入新内容
+
+#### :after 元素
+
+> 可以在元素的后面插入新内容
