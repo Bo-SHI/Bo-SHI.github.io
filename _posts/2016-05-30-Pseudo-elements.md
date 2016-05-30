@@ -5,7 +5,7 @@ date: 2016-05-30
 ---
 # CSS 伪元素(Pesudo elements)
 
-> CSS 伪元素用于向某写选择器设置特殊效果
+> CSS 伪元素用于向某些选择器设置特殊效果
 
 #### :first-line 元素
 
