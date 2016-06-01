@@ -4,27 +4,27 @@ title: "CSS Pseudo classes"
 date: 2016-05-30
 ---
 
-# CSS 伪类 (Pseudo classes)
+# CSS 伪类 (Pseudo classes)  
 
 > CSS伪类用于向某些选择器添加特殊的效果
 
 > 语法
   - selector:pseudo-class {property:value;}
-  - selector.class:pseudo-class {property:value;}
+  - selector.class:pseudo-class {property:value;}  
 
-### 锚伪类
+### 锚伪类  
 
 * 在支持CSS的浏览器中，链接的不同状态都可以以不同的方式显示，这些状态包括:
   - 未被访问状态 a:link
   - 已被访问状态 a:visited
   - 鼠标悬停状态 a:hover
-  - 活动状态：   a:active
+  - 活动状态：   a:active  
 
-### 伪类与CSS类
+### 伪类与CSS类  
 
-> 伪类可以与CSS类配合使用
+> 伪类可以与CSS类配合使用  
 
-### CSS2 :first-child 伪类
+### CSS2 :first-child 伪类  
 
 > 可以使用 :first-child 来选择元素的第一个子元素
 
@@ -64,14 +64,14 @@ date: 2016-05-30
     <body>
       <p><i>This is the first-child</i>.<i>This is the first-child</i></p>
       <p><i>This is not</i>.<i>This is not</i></p>
-    </body>
+    </body>  
 
-### CSS :lang伪类
+### CSS :lang伪类  
 
-> :lang 使你有能力为不同的语言定义特殊的规则
+> :lang 使你有能力为不同的语言定义特殊的规则  
 
 
-### CSS :focus伪类
+### CSS :focus伪类  
 
 > :focus 向拥有箭牌输入焦点的元素设置样式
 
