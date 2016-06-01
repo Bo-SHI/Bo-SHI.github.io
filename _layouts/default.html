@@ -3,27 +3,29 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/css/screen.css">
+			<link rel="stylesheet" type="text/css" href="/css/syntax.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/blog">Blog</a></li>
-	        		<li><a href="/blog">Test</a></li>
-	        		<li><a href="/">Home</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+			<div class="site">
+				<div class="title">
+					<a href="/">Bo-SHI</a>
+					<a class="extra" href="/">home</a>
+				</div><!--/.title-->
 
-			{{ content }}
+				{{ content }}
 
-			</div><!-- /.container -->
+				<div class="footer">
+					<div class="contact">
+		      	<p>
+		        	<a href="http://github.com/bo-shi/">github.com/bo-shi</a><br />
+							<a href="mailto:bobshisoldier@gmail.com">email</a>
+		      	</p>
+		    	</div>
+				</div><!--/.footer-->
+
+			</div><!--/.site-->
+
 			<br /><br />
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:bobshisoldier@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/bo-shi">github.com/bo-shi</a></li>
-				</ul>
-			</footer>
 		</body>
 	</html>
