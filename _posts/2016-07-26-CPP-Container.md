@@ -56,6 +56,7 @@ date: 2016-07-26
 
 ## 顺序容器的操作  
 
+  
 #### 容器定义的类型别名
 
 - size_type 无符号整型 
@@ -68,6 +69,7 @@ date: 2016-07-26
 - reference 元素的左值类型 等效于 value_type&  
 - const_reference 元素的常量左值类型 等效于 const value_type& 
 
+  
 #### 在顺序容器中添加元素
 
 - c.push_pack(t) 在容器c的尾部添加 所有的顺序容器都支持 
@@ -80,3 +82,31 @@ date: 2016-07-26
 > 在容器元素内添加的元素都是副本  
 > 任何insert和push操作都有可能使迭代器失效 
 > 避免存储end返回的迭代器 
+  
+  
+#### 容器大小的操作 
+
+- c.size()
+- c.max_size()
+- c.empty()
+- c.resize(n)
+- c.resize(n, t)  
+  
+> resize 操作可能会使迭代器失效  
+  
+  
+#### 访问元素  
+  
+- c.back()
+- c.front()
+- c[n]  只适用于 vector deque
+- c.at(n) 只适用于 vector deque  
+
+#### 删除元素 
+
+- c.erase(p) 删除迭代器p指向的元素 返回值为被删除元素后面元素的迭代器
+- c.erase(b, e) 删除迭代器b和e所指范围的元素 返回值为被删除元素段后面的元素，若e指向超出末端的下一个位置，则返回值也为超出末端位置的迭代器
+- c.clear() 删除所有的
+- c.pop_back() 
+- c.pop_front() 只适用于 list deque
+
