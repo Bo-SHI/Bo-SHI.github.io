@@ -51,4 +51,32 @@ date: 2016-07-26
 
 > - 对形成迭代器范围的迭代器的要求:
 > > - 指向同一个容器中的元素或者超出末端的下一个位置
-> > - 如果这两个迭代器不相等，则对first迭代器反复坐自增运算必须能够达到last。换句话说，last决不能位于first之前
+> > - 如果这两个迭代器不相等，则对first迭代器反复坐自增运算必须能够达到last。换句话说，last决不能位于first之前  
+
+
+## 顺序容器的操作  
+
+#### 容器定义的类型别名
+
+- size_type 无符号整型 
+- iterator 迭代器类型 
+- const_iterator 只读迭代器类型 
+- reverse_iterator 逆序迭代器
+- const_reverse_iterator 只读的逆序迭代器
+- difference_type 迭代器差值的有符号整型，可为负值 
+- value_type 元素类型 
+- reference 元素的左值类型 等效于 value_type&  
+- const_reference 元素的常量左值类型 等效于 const value_type& 
+
+#### 在顺序容器中添加元素
+
+- c.push_pack(t) 在容器c的尾部添加 所有的顺序容器都支持 
+- c.push_front(t) 在容器c的前端添加 list deque 两种顺序容器支持 
+- c.insert(p, t) 在迭代器p所指的元素之前添加 返回值新添加元素的迭代器 
+- c.isnert(p, n, t) 
+- c.insert(p, begin, end) 
+  
+  
+> 在容器元素内添加的元素都是副本  
+> 任何insert和push操作都有可能使迭代器失效 
+> 避免存储end返回的迭代器 
