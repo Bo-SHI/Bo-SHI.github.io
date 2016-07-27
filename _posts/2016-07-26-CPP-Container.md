@@ -187,4 +187,11 @@ date: 2016-07-26
 > map erase
 	- m.erase(k) 删除键为k的元素 返回值为删除的个数
 	- m.erase(p) 删除迭代器指向的元素 返回值为void
-	- m.erase(b, e) 删除迭代器范围内指向的元素 b,e必须为有效的 若b==e 则范围为空 返回值为void
+	- m.erase(b, e) 删除迭代器范围内指向的元素 b,e必须为有效的 若b==e 则范围为空 返回值为void  
+
+
+#### set类型
+
+- set类型只是单纯的键的集合  
+- set类型不支持下标操作符  
+- set类型没有 mapped_type, set类型的 value_type 不是pair类型，而是与key_type相同的类型  
