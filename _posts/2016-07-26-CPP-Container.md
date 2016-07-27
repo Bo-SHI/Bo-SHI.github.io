@@ -139,3 +139,26 @@ date: 2016-07-26
 	- 不同于vector deque提供在首部高效的插入删除 就像在尾部一样
 	- 与vector一样 支持快速的随机访问
 	- 在deque首部或尾部插入元素不会使任何迭代器失效，但在首部或尾部删除元素则只会使指向被删除元素的迭代器失效。在其他任何部位的插入删除操作会使所有迭代器失效。
+
+
+
+## 关联容器
+
+> 关联容器 ： map set multimap multiset  
+> 关联容器通过支持键来高效的查找和读取元素
+
+
+#### pair类型
+
+- pair类型是标准库定义的一种类型
+- pair.first pair.second 都是公有数据成员
+
+#### 关联容器与顺序容器的一些操作异同
+
+- 关联容器的构造 支持 默认构造 复制构造 迭代器构造 不支持顺序容器的通过大小来改造
+- 关联容器 支持 begin end rbegin rend
+- 关联容器 支持 类型别名 size_type (const_)iterator (const)_reverse_iterator difference_type value_type (const_)reference 
+- 关联容器 支持 赋值操作和swap操作 但是不支持 assign 操作
+- 关联容器 支持 erase clear 操作 但是返回值为void 顺序容器的返回值为被删除元素的下一个元素的迭代器
+- 关联容器 支持 size max_size empty 但是不支持 resize
+- 关联容器 不支持 front push_front pop_front back push_back push_front
