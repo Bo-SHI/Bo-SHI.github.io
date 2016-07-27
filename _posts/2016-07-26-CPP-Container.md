@@ -162,3 +162,29 @@ date: 2016-07-26
 - 关联容器 支持 erase clear 操作 但是返回值为void 顺序容器的返回值为被删除元素的下一个元素的迭代器
 - 关联容器 支持 size max_size empty 但是不支持 resize
 - 关联容器 不支持 front push_front pop_front back push_back push_front
+
+#### map类型
+
+> map 键类型的约束 所用的比较函数必须在键类型上定义 严格弱排序  
+> 严格弱排序 如果一个键和自己比较，会导致false结果  
+
+- map<K,V>::key_type 在map中，用作索引的键的类型
+- map<K,V>::mapped_type 在map中，键所关联的值的类型
+- map<K,V>::value_type 一个pair类型， first元素具有const map<K,V>::key_type类型， second元素具有map<K,V>::mapped_type类型
+
+> map 下标操作符 map[map::key_type] = map::mapped_type  
+	- 如果map中存在该键，则返回该键所关联的值
+	- 如果map中不存在该键，map容器才为该键创建一个新的元素，并将它插入到map中。所关联的值先采用值初始化，然后再赋值。
+
+> map insert操作符 map.insert(map::value_type) 
+	- 如果map中存在该键，不做任何操作
+	- 如果mao中不存在该键，则插入
+	- 返回值为pair类型 pair<map::iterator, bool> bool为true则表明成功，否则失败(map中已经存在)  
+  
+> map count 查询key_type出现的次数 返回值为0或者1
+> map find 查找map中key_type 返回值为迭代器  
+
+> map erase
+	- m.erase(k) 删除键为k的元素 返回值为删除的个数
+	- m.erase(p) 删除迭代器指向的元素 返回值为void
+	- m.erase(b, e) 删除迭代器范围内指向的元素 b,e必须为有效的 若b==e 则范围为空 返回值为void
