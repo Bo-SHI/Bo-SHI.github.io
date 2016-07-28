@@ -195,3 +195,14 @@ date: 2016-07-26
 - set类型只是单纯的键的集合  
 - set类型不支持下标操作符  
 - set类型没有 mapped_type, set类型的 value_type 不是pair类型，而是与key_type相同的类型  
+
+
+#### multimap和multiset
+
+- mulitmap和multiset 支持的操作 与 map和set 基本相同，唯一例外 multimap不支持下标操作
+- erase 操作 若只带有一个键参数 返回值为 删除的个数；若为一个或一对迭代器，返回值为void
+- count 操作 某键出现的次数
+- find 操作 返回值为指向正在查找的键的第一个元素的迭代器
+- lower_bound 操作 返回一个迭代器 指向不小于正在查找的键的第一个元素
+- upper_bound 操作 返回一个迭代器 指向大于正在查找的键的第一个元素
+- equal_range 操作 返回一个迭代器的pair对象，first成员等价于lower_bound,second成员等价于upper_bound
